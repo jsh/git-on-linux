@@ -1,10 +1,8 @@
 #!/bin/bash -eu
-# Create a default, Debian 10 (Buster) image in GCE
-# and run this script.
+# Create a default, Debian 10 (Buster) image in GCE and run this script.
 
 set -o pipefail
 trap 'ls /tmp/*.OUT; echo FAIL' ERR
-
 PS4='[\t] '; set -x
 
 # Get all the prerequisites
